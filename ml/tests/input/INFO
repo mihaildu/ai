@@ -1,0 +1,64 @@
+tumors.in
+	classification, 1 feature/input, 2 classes/output
+	tumor size, malignant (1) or benign (0)
+	
+tumors2.in
+	classification, 1 feature/input, 2 classes/output
+	tumor size, malignant (1) or benign (0)
+	data mixes a little bit (unlike tumors.in)
+	
+houses.in
+	regression, 1 feature/input, 1 output (linear approx)
+	house size, price
+	
+kmeans.in
+	2D data, <x,y> on each line
+	
+logistic.in
+	classification, 2 features, 2 output classes
+	feature 1, feature 2 & class
+	
+logistic_circle.in
+	classification, 2 features, 2 output classes
+	feature 1, feature 2 & class
+	data separation is circular
+	
+logistic_multiclass.in
+	classification, 2 features, 3 output classes
+	feature 1, feature 2 & class
+	
+lda.in
+	same file as logistic.in with different classes
+	
+regularization.in
+	same file as houses.in but with less data
+	
+xnor_mc_nn.in
+	classification, 2 features, 4 output classes
+	feature 1, feature 2 & class vector [c1 c2 c3 c4]
+	
+xnor_nn.in
+	classification, 2 features, 2 output classes (xnor problem - should be used by a nn)
+	feature 1, feature 2 & class
+
+digits_nn.in
+	5000 20x20 grayscale images used in the digit recognition problem
+	this is from andrew ng's course on ml and doesn't work on the neural net test (different nn representation)
+	
+digits_nn.mat
+	same as 'digits_nn.in', but in .mat format
+
+digits_weights_nn.mat
+	well trained weights for the neural net used in the digits recognition problem
+	
+weights_test6_nn.mat
+	same as 'digits_nn.in', but this works on the test neural net
+	
+weights_test6_nn_70.mat
+	same as 'weights_test6_nn.mat' but with only 70% of the data
+	
+weights_test6_log.mat
+	same as 'weights_test6_nn.mat' but the neural net is the equivalent of a one-vs-all logreg
+	
+weights_test2_xnor.mat
+	weights well trained to perform XNOR on the test neural net

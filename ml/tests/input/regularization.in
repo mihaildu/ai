@@ -1,0 +1,8 @@
+% regression, 1 feature/input, 1 output (linear approx)
+% house size, price
+10 102
+19 177
+21 223
+24 190
+33 325
+37 440
