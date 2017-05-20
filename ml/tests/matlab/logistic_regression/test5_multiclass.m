@@ -153,7 +153,7 @@ function plot_all(xs, ys, W, xpred, ypred)
     xlim([xmin-1 xmax+1]);
     ylim([ymin-1 ymax+1]);
     
-    % plot separating line
+    % plot separating lines
     x0 = [xmin; xmax];
     y0 = [-(W(3,1)+(W(1,1) * xmin))/W(2,1); -(W(3,1)+(W(1,1) * xmax))/W(2,1)];
     y1 = [-(W(3,2)+(W(1,2) * xmin))/W(2,2); -(W(3,2)+(W(1,2) * xmax))/W(2,2)];
