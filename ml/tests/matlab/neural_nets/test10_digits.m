@@ -9,6 +9,9 @@
 %       each image has a digit drawn
 %       500 images for each digit
 %
+%   arch
+%       400 features, 25 hidden units, 10 output units
+%
 %   output/ytrain
 %       class for the digit in the image (10 classes)
 %       class 10 = digit 0
