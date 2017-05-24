@@ -23,7 +23,7 @@ function pca_test()
 end
 
 function plot_data_test1(xs, zs, pca_mat)
-	figure;
+    figure;
     hold on;
     plot(xs(:,1), xs(:,2), 'ko');
 

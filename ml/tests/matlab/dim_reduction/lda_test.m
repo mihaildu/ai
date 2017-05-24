@@ -2,7 +2,7 @@
 % May 2017
 %
 % Simple test that performs Linear Discriminant Analysis (LDA)
-% on 2D data (2D -> 1D). Input in 'logistic.in'.
+% on 2D data (2D -> 1D). Input in 'lda.in'.
 
 function lda_test()
     addpath('core/');
@@ -23,7 +23,7 @@ function lda_test()
 end
 
 function plot_data_test2(xs, ys, zs, lda_mat)
-	figure;
+    figure;
     hold on;
     
     xs0 = xs(ys == 0,:);
