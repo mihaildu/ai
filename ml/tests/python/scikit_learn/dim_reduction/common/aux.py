@@ -6,9 +6,6 @@ Common functions used in some tests.
 """
 
 import numpy as np
-import matplotlib.pyplot as plt
-from matplotlib import colors
-from mpl_toolkits.mplot3d import Axes3D
 
 def read_data(fname, output_layers=1):
     """ Generic data read from file """

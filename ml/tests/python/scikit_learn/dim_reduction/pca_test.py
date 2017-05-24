@@ -5,6 +5,16 @@ May 2017
 Simple test that performs Principal Component Analysis (PCA)
   on 2D data (2D -> 1D). Input in 'logistic.in'.
 
+Results
+  Matlab
+    PCA mat = [-0.8454, -0.5342]
+    slope = 0.6319
+    variance retained = 90.04%
+  Sklearn
+    PCA mat = [0.7071, 0.7071]
+    slope = 0.99 (not identical vals)
+    variance retained = 88.51%
+
 For PCA I used scikit-learn:
   sklearn.decomposition.PCA
   this uses LAPACK for svd
@@ -58,6 +68,7 @@ def plot_all(xs, zs, pca):
     plt.plot(wxs, wys, color="lime")
 
     # plot projected points
+    # this is the same as pca.inverse_transform(zs)
     pxs = np.dot(zs, pca.components_)
     plt.plot(pxs[:,0], pxs[:,1], "ro")
     plt.show()

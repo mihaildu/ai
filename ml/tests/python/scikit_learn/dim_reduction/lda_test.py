@@ -5,6 +5,14 @@ May 2017
 Simple test that performs Linear Discriminant Analysis (LDA)
   on 2D data (2D -> 1D). Input in 'lda.in'.
 
+Results
+  Matlab
+    LDA mat = [-0.6159, 0.7878]
+    slope = -1.2791
+  Sklearn
+    LDA mat = [2.5618, -2.3366]
+    slope = -0.9121
+
 For LDA I used scikit-learn:
   sklearn.discriminant_analysis.LinearDiscriminantAnalysis
   this also has a 'predict()' function implemented
@@ -60,8 +68,6 @@ def plot_all(xs, ys, zs, lda):
     xmax = pxs[:,0].max()
     ymin = pxs[:,1].min()
     ymax = pxs[:,1].max()
-    plt.xlim([xmin - 1, xmax + 1])
-    plt.ylim([ymin - 1, ymax + 1])
     plt.xlim([xmin - 1, xmax + 1])
     plt.ylim([ymin - 1, ymax + 1])
 
