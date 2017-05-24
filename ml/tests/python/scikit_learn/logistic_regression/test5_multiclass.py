@@ -80,7 +80,8 @@ def plot_all(xs, ys, lr, xpred, ypred, show_lines=True, show_colormesh=False):
                                  np.linspace(ymin - 1, ymax + 1, num_pts))
         wzs = lr.predict(np.concatenate((wxs.reshape(wxs.size, 1),
                                          wys.reshape(wys.size, 1)), axis=1))
-        plt.pcolormesh(wxs, wys, wzs.reshape(wxs.shape), cmap=my_cmap, alpha=0.5)
+        plt.pcolormesh(wxs, wys, wzs.reshape(wxs.shape), cmap=my_cmap,
+                       alpha=0.5)
 
     # plot predicted points
     npred = len(xpred)
